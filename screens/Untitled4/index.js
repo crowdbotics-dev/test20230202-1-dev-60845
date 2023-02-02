@@ -13,7 +13,7 @@ const Untitled4 = ({
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><Pressable onPress={() => navigation.navigation.navigate("Untitled5", {})}><View style={styles.elCfXaDw}><Text style={styles.UvPTCBzZ}>START</Text></View></Pressable><ImageBackground style={styles.vhMQtaAO} source={require("./escudo.png")} resizeMode="cover"></ImageBackground></ScrollView>
+    }}><Pressable onPress={() => navigation.navigation.navigate("Untitled6", {})}><View style={styles.elCfXaDw}><Text style={styles.UvPTCBzZ}>START</Text></View></Pressable><ImageBackground style={styles.vhMQtaAO} source={require("./escudo.png")} resizeMode="cover"></ImageBackground></ScrollView>
     <View style={styles.XqGQWGyw}><Text style={styles.znecCjPq}>EXIT</Text></View></SafeAreaView>;
 };
 
