@@ -13,7 +13,7 @@ const Untitled1 = () => {
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><View style={styles.tvDDrhAK}><View style={styles.NYwKOzTw}><ImageBackground style={styles.XowgTtYc} source={require("./1.png")} resizeMode="cover"></ImageBackground></View><View style={styles.BIytHHHQ}><Text style={styles.oNeoOyNx}>User Name</Text></View><View style={styles.CSvWyVFo}><TextInput style={styles.HDSXVtqv}></TextInput></View><View style={styles.hwsuLCtY}><Text style={styles.bhLOqEQD}>Password</Text></View><View style={styles.bTzepmxj}><View style={styles.orXeDUfK}><TextInput style={styles.ItUKAOom}></TextInput></View></View><View style={styles.bqDIGOsq}><Text style={styles.IpcUydYx}>Forgot Password?</Text></View><View style={styles.gYPaFsIl}><CheckBox style={styles.ubSnVRnC} title="Remember me"></CheckBox></View><View style={styles.JnGtjsSL}><View style={styles.vPnmGACm}></View></View></View></ScrollView>
+    }}><View style={styles.tvDDrhAK}><View style={styles.NYwKOzTw}><ImageBackground style={styles.XowgTtYc} source={require("./1.png")} resizeMode="cover"></ImageBackground></View><View style={styles.BIytHHHQ}><Text style={styles.oNeoOyNx}>User Name</Text></View><View style={styles.CSvWyVFo}><TextInput style={styles.HDSXVtqv}></TextInput></View><View style={styles.hwsuLCtY}><Text style={styles.bhLOqEQD}>Password</Text></View><View style={styles.bTzepmxj}><View style={styles.orXeDUfK}><TextInput style={styles.ItUKAOom}></TextInput></View></View><View style={styles.bqDIGOsq}><Text style={styles.IpcUydYx}>Forgot Password?</Text></View><View style={styles.gYPaFsIl}><CheckBox style={styles.ubSnVRnC} title="Remember me"></CheckBox></View><View style={styles.JnGtjsSL}><View style={styles.vPnmGACm}><View style={styles.foxZmHzw}><Text style={styles.cSYMzoMT}>LOGIN</Text></View></View></View></View></ScrollView>
     </SafeAreaView>;
 };
 
@@ -84,13 +84,13 @@ const styles = StyleSheet.create({
   HDSXVtqv: {
     backgroundColor: "#ffffff",
     borderColor: "#cccccc",
-    width: 150,
+    width: 339,
     height: 30
   },
   ItUKAOom: {
     backgroundColor: "#ffffff",
     borderColor: "#cccccc",
-    width: 150,
+    width: 334,
     height: 30
   },
   KVTGwagH: {
@@ -130,7 +130,26 @@ const styles = StyleSheet.create({
     width: 140,
     backgroundColor: "#E4E4E4",
     borderRadius: 0,
-    color: "#777777"
+    color: "#777777",
+    flexDirection: "row",
+    flex: "1",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  cSYMzoMT: {
+    width: 138,
+    height: 23,
+    lineHeight: 14,
+    fontSize: 16,
+    borderRadius: 0,
+    textAlign: "center",
+    color: "#170eeb",
+    fontWeight: "900"
+  },
+  foxZmHzw: {
+    flex: 1,
+    width: 140,
+    height: 25
   }
 });
 export default Untitled1;
