@@ -15,7 +15,7 @@ const Untitled2 = () => {
         
           <View style={styles.column1}><ImageBackground style={styles.kzlxKIVn} source={require("./escudo.png")} resizeMode="cover"></ImageBackground></View>
           
-          <View style={styles.column3}><View style={styles.OtyNokaz}><View style={styles.qQcFDQGj}></View><View style={styles.sZJsqbCJ}><Text style={styles.rIrOJrtq}>START</Text></View><View style={styles.LcfVinKI}></View></View><View style={styles.xgKoxdgt}></View></View>
+          <View style={styles.column3}><View style={styles.OtyNokaz}><View style={styles.qQcFDQGj}></View><View style={styles.sZJsqbCJ}><Text style={styles.rIrOJrtq}>START</Text></View><View style={styles.LcfVinKI}></View></View><View style={styles.xgKoxdgt}><Text style={styles.yudAhSNP}>EXIT</Text></View></View>
         
         </ScrollView>
       </SafeAreaView>;
@@ -56,7 +56,11 @@ const styles = StyleSheet.create({
     width: 140,
     backgroundColor: "#E4E4E4",
     borderRadius: 0,
-    color: "#777777"
+    color: "#777777",
+    flexDirection: "row",
+    flex: "1",
+    justifyContent: "center",
+    alignItems: "center"
   },
   qQcFDQGj: {
     flex: 1
@@ -78,6 +82,14 @@ const styles = StyleSheet.create({
     borderRadius: 0,
     textAlign: "left",
     color: "#1a2ae5",
+    fontWeight: "900"
+  },
+  yudAhSNP: {
+    width: 37,
+    height: 20,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
     fontWeight: "900"
   }
 });
