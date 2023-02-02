@@ -1,10 +1,13 @@
+import { Pressable } from "react-native";
 import { Text } from "react-native";
 import { ImageBackground } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
-const Untitled2 = () => {
-  return <SafeAreaView style={styles.safeArea}>
+const Untitled2 = ({
+  navigation
+}) => {
+  return <SafeAreaView style={styles.safeArea} onPress={() => navigation.navigation.navigate("undefined", {})}>
         <ScrollView contentContainerStyle={{
       flex: 1,
       flexDirection: 'column',
@@ -15,7 +18,9 @@ const Untitled2 = () => {
         
           <View style={styles.column1}><ImageBackground style={styles.kzlxKIVn} source={require("./escudo.png")} resizeMode="cover"></ImageBackground></View>
           
-          <View style={styles.column3}><View style={styles.OtyNokaz}><View style={styles.qQcFDQGj}></View><View style={styles.sZJsqbCJ}><Text style={styles.rIrOJrtq}>START</Text></View><View style={styles.LcfVinKI}></View></View><View style={styles.xgKoxdgt}><Text style={styles.yudAhSNP}>EXIT</Text></View></View>
+          <View style={styles.column3} onPress={() => navigation.navigation.navigate("undefined", {})}><Pressable onPress={() => navigation.navigation.navigate("Untitled3", {
+          "user": "test"
+        })}><View style={styles.OtyNokaz}><View style={styles.qQcFDQGj}></View><View style={styles.sZJsqbCJ}><Text style={styles.rIrOJrtq}>START</Text></View><View style={styles.LcfVinKI}></View></View></Pressable><Pressable onPress={() => navigation.navigation.navigate("undefined", {})}><View style={styles.xgKoxdgt}><Text style={styles.yudAhSNP}>EXIT</Text></View></Pressable></View>
         
         </ScrollView>
       </SafeAreaView>;
@@ -26,7 +31,7 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   column1: {
-    flex: 4
+    flex: 6
   },
   column2: {
     flex: 1
@@ -34,7 +39,9 @@ const styles = StyleSheet.create({
   column3: {
     flex: 1,
     flexDirection: "row",
-    gap: 10
+    gap: 10,
+    justifyContent: "center",
+    alignItems: "stretch"
   },
   kzlxKIVn: {
     width: 332,
